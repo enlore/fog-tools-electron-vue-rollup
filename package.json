@@ -3,7 +3,6 @@
   "version": "1.0.1",
   "description": "A Vue.js + Electron build env boilerplate",
   "author": "enlore <n.e.lorenson@gmail.com>",
-  "private": true,
   "scripts": {
     "build": "run-s build:**",
     "build:js": "cross-env NODE_ENV=production rollup -c",
