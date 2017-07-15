@@ -13,9 +13,8 @@ const { app, BrowserWindow } = require('electron')
 
 let mainWindow
 
-const winUrl = resolve(__dirname, 'public', 'index.html')
-
-console.info('file://' + winUrl)
+//const winUrl = `file://${resolve(__dirname, 'index.html')}`
+const winUrl = `file://${resolve(__dirname, 'public', 'index.html')}`
 
 function createWindow () {
   mainWindow = new BrowserWindow({
@@ -23,6 +22,7 @@ function createWindow () {
     width: 800
   })
 
+  console.log('loading main url', winUrl)
   mainWindow.loadURL(winUrl)
 
   mainWindow.on('closed', () => {
