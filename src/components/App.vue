@@ -1,11 +1,10 @@
 <template>
-  <div class="app">
-    <h1> HELLO GOODBYE </h1>
-  </div>
+    <div class="app">
+        <h1> HELLO GOODBYE </h1>
+    </div>
 </template>
 
 <script>
-
 export default {
 }
 </script>

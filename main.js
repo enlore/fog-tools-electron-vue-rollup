@@ -17,33 +17,33 @@ let mainWindow
 const winUrl = `file://${resolve(__dirname, 'public', 'index.html')}`
 
 function createWindow () {
-  mainWindow = new BrowserWindow({
-    height: 600,
-    width: 800
-  })
+    mainWindow = new BrowserWindow({
+        height: 600,
+        width: 800
+    })
 
-  console.log('loading main url', winUrl)
-  mainWindow.loadURL(winUrl)
+    console.log('loading main url', winUrl)
+    mainWindow.loadURL(winUrl)
 
-  mainWindow.on('closed', () => {
-    mainWindow = null
-  })
+    mainWindow.on('closed', () => {
+        mainWindow = null
+    })
 
-  //mainWindow.webContents.openDevTools()
+    //mainWindow.webContents.openDevTools()
 
-  console.log('mainWindow opened')
+    console.log('mainWindow opened')
 }
 
 app.on('ready', createWindow)
 
 app.on('window-all-closed', () => {
-  if (process.platform !== 'darwin') { // for OSX
-    app.quit()
-  }
+    if (process.platform !== 'darwin') { // for OSX
+        app.quit()
+    }
 })
 
 app.on('activate', () => {
-  if (mainWindow === null) {
-    createWindow()
-  }
+    if (mainWindow === null) {
+        createWindow()
+    }
 })
