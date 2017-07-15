@@ -6,10 +6,9 @@ import buble from 'rollup-plugin-buble'
 import nodeResolve from 'rollup-plugin-node-resolve'
 import commonjs from 'rollup-plugin-commonjs'
 import nodeGlobals from 'rollup-plugin-node-globals'
+import replace from 'rollup-plugin-replace'
 
 import butternut from 'rollup-plugin-butternut'
-import livereload from 'rollup-plugin-livereload'
-import serve from 'rollup-plugin-serve'
 
 import re from 'rollup-plugin-re'
 import gitVersion from 'rollup-plugin-git-version'
@@ -71,12 +70,7 @@ if (isProduction) {
 }
 
 if (isDevelopment) {
-  config.plugins.push(livereload())
-  config.plugins.push(serve({
-    contentBase: './public/',
-    port: 8080,
-    open: true
-  }))
+    // dev env stuff
 }
 
 export default config
