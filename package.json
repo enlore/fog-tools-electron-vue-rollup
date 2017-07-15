@@ -10,7 +10,7 @@
     "build:cssnano": "cssnano public/assets/css/app.css public/assets/css/app.css",
     "dev": "cross-env NODE_ENV=development npm-run-all --parallel dev:rollup dev:electron",
     "dev:rollup": "rollup -cw",
-    "dev:electron": "electron ."
+    "dev:electron": "electron ./main.js"
   },
   "dependencies": {
     "dotenv": "^4.0.0",
@@ -38,6 +38,7 @@
     "rollup-plugin-node-globals": "^1.1.0",
     "rollup-plugin-node-resolve": "^3.0.0",
     "rollup-plugin-re": "^1.0.6",
+    "rollup-plugin-replace": "^1.1.1",
     "rollup-plugin-serve": "^0.3.0",
     "rollup-plugin-vue": "^2.4.0",
     "rollup-watch": "^3.2.2"
