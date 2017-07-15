@@ -1,14 +1,12 @@
 <template>
   <div class="app">
-    <Hello></Hello>
+    <h1> HELLO GOODBYE </h1>
   </div>
 </template>
 
 <script>
-import Hello from './components/Hello.vue'
 
 export default {
-  components: { Hello }
 }
 </script>
 
