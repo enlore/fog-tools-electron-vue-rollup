@@ -1,6 +1,6 @@
 {
   "name": "fog-tools-electron-vue-rollup",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A Vue.js + Electron build env boilerplate",
   "author": "enlore <n.e.lorenson@gmail.com>",
   "scripts": {
